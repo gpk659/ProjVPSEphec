@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Semaine 13 et 14 - Exercice 1</title>
+  <meta charset=utf-8></meta>
+  <link rel=stylesheet href=css/S13EX01.css />
+  <script src=js/lambUtils.js></script>
+  <script src=js/S13EX01.js></script>
+  <script>
+    var catalogue = {
+     '0124' : {auteur: 'moi', titre: 'Connectique', pret:true,
+     dte: new Date(2014,9,11)},
+     '0254' : {auteur: 'toi', titre: 'Programmation C', pret:false},
+     '0334' : {auteur: 'lui', titre: 'JavaScript', pret:false},
+     '0250' : {auteur: 'elle', titre: 'Mathématiques', pret:false},
+     '0604' : {auteur: 'moi', titre: 'Objets', pret:false},
+     '0025' : {auteur: 'je', titre: 'Electricité', pret:false},
+     '0099' : {auteur: 'nous', titre: 'Phénomènes Périodiques', pret:false},
+     '0023' : {auteur: 'eux', titre: 'Programmation Java', pret:false},
+     '0100' : {auteur: 'lui', titre: 'Bases de Données', pret:false},
+     '0147' : {auteur: 'moi', titre: 'Traitement de Signal', pret:false},
+     '0004' : {auteur: 'on', titre: 'Programmation Multimedia', pret:true,
+     dte: new Date(2014,10,6)}
+    } 
+  </script>
+</head>
+<body onload=dessiner()>
+    <h1>Catalogue de la bibliothèque</h1>
+  <section id=BlocG>
+    <article id=tri>
+      <p id=titr>Tri par : </p>
+      <p id=re>
+        <input name=tri id=ref type=radio value=r>
+        <label for=ref>ref</label>
+      </p>
+      <p id=aut>
+        <input name=tri id=auteur type=radio value=a>
+        <label for=auteur>auteur</label>
+      </p>
+      <p id=tit>
+        <input name=tri id=titre type=radio value=t>
+        <label for=titre>titre</label>
+      </p>
+    </article>
+    <article>
+      <table id=non>
+        <thead>
+          <tr>
+            <th class=it>ref</th>
+            <th class=aute>auteur</th>
+            <th class=ti>titre</th>
+          </tr>
+        </thead>
+        <tbody id=tbG>
+          <!-- remplir ici -->
+        </tbody>
+      </table>
+      <form name=frm1 action=emprunt(this); onSubmit=check('e',this);>
+        <input name=emp id=emp type=text required>
+        <input type=submit value=Emprunter>
+      </form>
+    </article>
+  </section>
+  <section id=blocD>
+    <h1>Ouvrages actuellement en prêt</h1>
+    
+    <table id=oui>
+      <thead>
+        <tr>
+          <th class=it>ref</th>
+          <th class=aute>auteur</th>
+          <th class=ti>titre</th>
+          <th class=it id=dat>depuis</th>
+        </tr>
+      </thead>
+      <tbody id=tbD>
+        <!-- remplir ici -->
+      </tbody>
+    </table>
+    <form name=frm2 action=# onSubmit='return giveBack();'>
+      <input name=ren id=ren type=text required>
+      <input type=submit value=Rendre>
+    </form>
+  </section>
+</body>
+</html>

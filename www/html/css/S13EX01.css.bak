@@ -1,0 +1,64 @@
+body{
+  width : 930px;
+  font-family : verdana;
+  font-size : 1em ;
+}
+
+#blocG{
+  width : 400px;
+  display : inline-block;
+  float : left;
+}
+#blocD{
+  width : 500px;
+  display : inline-block;
+  position : absolute;
+  top : 57px;
+  left : 415px;
+}
+#re, #aut, #tit, #titr{
+  display : inline-block;
+}
+#tri{
+  border : 1px solid;
+  width : 280px;
+  padding : 0px 10px 0px 10px;
+  background-color : gold;
+  margin : 10px 0px 10px;
+}
+thead{
+  font-style : none;
+  }
+.it{
+  font-style : italic;
+  width : 40px;
+  font-size : 0.75em;
+}
+.aute{
+  width : 80px;
+}
+.ti{
+  width : 200px;
+}
+.dat{
+  width : 70px;
+  font-size : 0.7em;
+}
+table{
+  margin : 10px 0px 10px;
+  border : double;
+  background-color : silver;
+}
+th{
+  border-bottom : 1px solid black;
+}
+input[type=text]{
+  width : 60px;
+}
+h1{
+  font-size : 1.4em;
+}
+td{
+  border-right : 1px dotted;
+  border-bottom : 1px dotted;
+}
