@@ -145,3 +145,48 @@ ls
 nano named.conf.options 
 nano named.conf.options 
 exit
+cd /etc/bind
+ls
+nano named.conf.options
+service bind9 restart
+nano named.conf.options 
+service bind9 restart
+exit
+cd /etc/bind
+nano named.conf.options 
+service bind9 restart
+exit
+cd /etc/bind/
+ls
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano named.conf.local 
+nano named.conf.options 
+nano named.conf.options 
+nano named.conf.local 
+
+nano db.wt13.ephec-ti.be 
+cd /
+sevice bind9 restart
+service bind9 restart
+exit
+@                   IN                TXT                  "v=spf1 a mx ip4:IPv4 DU SERVEUR ~all"
+mail._domainkey     IN                TXT                  "k=rsa; p=CLE PUBLIQUE DKIM"
+_dmarc              IN                TXT                  "v=DMARC1; p=reject; rua=mailto:postmaster@domain.tld; ruf=mailto:admin@domain.tld; fo=0; adkim=s; aspf=s; pct=100; rf=afrf; sp=reject"
+_domainkey          IN                TXT                  "o=-; r=postmaster@domain.tld"
+nano /etc/bind/db.wt13.ephec-ti.be 
+cd /etc/bind
+ls
+nano db.wt13.ephec-ti.be 
+service bind9 restart
+nano db.wt13.ephec-ti.be 
+
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+ /
+cd /
+exit
+lynx www.google.com

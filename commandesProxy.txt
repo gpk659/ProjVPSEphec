@@ -1,0 +1,10 @@
+---------------------------------DNS------------------------------------------------------
+créé le docker proxy : 
+sudo docker run --name srv_proxy -h px -v /home/krumka/ProjVPSEphec/config/proxy/:/root/ -itd krumka/srv_proxy
+------------------------------------------------------------------------------------------
+aller sur le docker en ligne de commande : 
+sudo docker exec -it srv_proxy bash
+------------------------------------------------------------------------------------------
+Construction image docker srv_proxy :
+sudo docker build -t krumka/srv_proxy /home/krumka/ProjVPSEphec/docker-files/srv_proxy/
+------------------------------------------------------------------------------------------
