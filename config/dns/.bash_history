@@ -190,3 +190,76 @@ nano db.wt13.ephec-ti.be
 cd /
 exit
 lynx www.google.com
+ps -a
+cd /etc
+ls
+cd /bin/
+cd /
+cd /etc/bind9
+cd /etc/bind
+ls
+nano named.conf.local 
+nano named.conf.options 
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+cd /
+restart service bind9
+service restart bind9
+service bind9 restart
+exit
+ls
+nano /etc/bind
+cd /etc/bind
+ls
+nano db.wt13.ephec-ti.be 
+service bind9 restart
+nano db.wt13.ephec-ti.be 
+$=s; aspf=s; pct=100; rf=afrf; sp=reject"
+exit
+exit
+
+qsdqsdqsd 
+nano db.wt13.ephec-ti.be 
+service bind9 restart
+nano db.wt13.ephec-ti.be 
+exit
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+exit
+nano /etc/bind/named.conf.local 
+nano /etc/bind/db.127 
+exit
+nano /etc/bind/db.wt13.ephec-ti.be 
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind9 restart
+nano /etc/bind/hosts
+cd /etc/bind
+ls
+cd /
+nano /etc/hosts
+service bind9 restart
+nano /etc/hosts
+exit

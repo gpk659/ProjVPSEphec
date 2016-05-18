@@ -78,3 +78,25 @@ ls /var/run/mysqld/mysqld.sock
 ls /var/run/mysqld
 service mysql start
 mysql -u root -p
+curl localhost
+apt-get install curl
+curl localhost
+curl localhost
+apt-get update
+apt-get upgrade$
+apt-get upgrade
+curl localhost
+service apache2 start
+service apache2 restart
+curl localhost
+curl localhost
+lynx localhost
+apt-get install lynx
+lynx localhost
+service apache2 start
+service mysql start
+service service postfix restart
+service dovecot restart
+service postfix restart
+telnet localhost 25
+ls /etc/bind
