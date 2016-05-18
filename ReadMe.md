@@ -11,11 +11,11 @@ I don't know :d
 etc etc
 
 ## Docker commands
-### WEB
-Create the docker and run it : 
+##### WEB
+Create the docker and run it (replace the <>) : 
 ~~~bash
-$ sudo docker run --name srv_web -p 80:80 -v /home/krumka/ProjVPSEphec/www/:/var/www \
--v /home/krumka/ProjVPSEphec/config/web/apache2/:/etc/apache2/ -itd krumka/srv_web
+$ sudo docker run --name srv_web -p 80:80 -v <repo path>/www/:/var/www \
+-v <repo path>/config/web/apache2/:/etc/apache2/ -itd krumka/srv_web
 ~~~
 
 Access command line : 
@@ -25,5 +25,5 @@ $ sudo docker exec -it srv_web bash
 
 Building the fresh image without configuration (replace the <>) : 
 ~~~bash
-$ sudo docker build -t krumka/srv_web <repo path>/ProjVPSEphec/docker-files/srv_web/
+$ sudo docker build -t krumka/srv_web <repo path>/docker-files/srv_web/
 ~~~
