@@ -15,7 +15,7 @@ etc etc
 Create the docker and run it (replace the <>) : 
 ~~~bash
 $ sudo docker run --name srv_web -p 80:80 -v <repo path>/www/:/var/www \
--v <repo path>/config/web/apache2/:/etc/apache2/ -itd krumka/srv_web
+-v <repo path>/config/web/sites-available/:/etc/apache2/sites-available/ -itd krumka/srv_web
 ~~~
 
 Access command line : 
@@ -30,13 +30,14 @@ $ sudo docker build -t srv_web <repo path>/docker-files/srv_web/
 ##### Intranet
 Create the docker and run it (replace the <>) : 
 ~~~bash
-$ sudo docker run --name srv_web -p 80:80 -v <repo path>/www/:/var/www \
--v <repo path>/config/web/apache2/:/etc/apache2/ -itd krumka/srv_web
+$ sudo docker network create --subnet=172.18.0.0/16 intraNetwork
+$ sudo docker run --name srv_intra --net intraNetwork -v <repo path>/config/intra/www/:/var/www \
+-v <repo path>/config/intra/sites-available/:/etc/apache2/sites-available/ -itd krumka/srv_intra
 ~~~
 
 Access command line : 
 ~~~bash
-$ sudo docker exec -it srv_web bash
+$ sudo docker exec -it srv_intra bash
 ~~~
 
 Building a fresh image without configuration (replace the <>) : 
@@ -65,6 +66,7 @@ $ sudo docker build -t srv_web <repo path>/docker-files/srv_dns/
 * /etc/hostname
 * /etc/hosts
 * /etc/bind/
+
 ##### Mail
 Create the docker and run it (replace the <>) : 
 ~~~bash
@@ -154,3 +156,25 @@ $
 
 ##### OpenVPN
 Install openVPN directly on the server by following the tutoriel on [this URL](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04).
+
+##### SMB
+
+Create the docker and run it (replace the <>) : 
+~~~bash
+$ sudo docker network create --subnet=172.19.0.0/16 smbNetwork
+$ sudo docker run --name srv_smb --net smbNetwork -v <repo path>/config/smb/partage/:/home/ \
+-v <repo path>/config/smb/:/root/ -itd krumka/srv_intra
+~~~
+
+Access command line : 
+~~~bash
+$ 
+~~~
+
+Building a fresh image without configuration (replace the <>) : 
+~~~bash
+$ 
+~~~
+
+$ sudo docker network create --subnet=172.19.0.0/16 intraNetwork
+$ 
