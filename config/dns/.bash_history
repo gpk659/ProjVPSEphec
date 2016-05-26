@@ -263,3 +263,66 @@ nano /etc/hosts
 service bind9 restart
 nano /etc/hosts
 exit
+nano /etc/bind/named.conf.local 
+cd etc
+cd bind
+ls
+touch db.intranet.ephec-ti.be
+nano db.intranet.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano db.wt13.ephec-ti.be 
+nano db.intranet.ephec-ti.be 
+nano db.intranet.ephec-ti.be 
+cd ..
+cd bind
+nano named.conf.local 
+exit
+nano named.conf.local 
+cd /etc/bind/named.conf.local 
+nano /etc/bind/named.conf.local 
+nano /etc/bind/named.conf.local 
+cd /etc/bind
+ls
+rm db.intranet.ephec-ti.be
+ls
+exit
+                                                                small_northcutt
+e8303347c4ad        ubuntu              "/bin/bash"              3 weeks ago         Up 3 weeks                                                                                                                                                                                                               client_2
+c3c21e359e41        krumka/srv_proxy    "/bin/bash"              4 weeks ago         Up 4 weeks                                                                                                                                                                                                               srv_proxy
+b7f2848e2f6b        22711318382a        "/bin/bash"              4 weeks ago         Up 4 weeks          53/tcp                                                                                                                                                                                               srv_cache
+f1f7f9a8b0d5        22711318382a        "/bin/bash"              4 weeks ago         Up 4 weeks          0.0.0.0:53->53/udp, 53/tcp                                                                                                                                                                           srv_dns
+rndc dumpdb -cache
+dump-file "/var/named/data/cache_dump.db"
+cd var
+ls
+cd cache/
+ls
+cd bind/
+ls
+nano named_dump.db 
+cd ...
+cd ..
+cd ..
+ls
+cd ..
+exit
+lynx 'google.be'
+lynx 'yahoo.com'
+exitexit
+exit
+rndc dumpdb -cache
+cd cache/
+cd cache
+cd var
+ls
+cd cache/
+ls
+cd bind/
+ls
+nano named_dump.db 
+exit
+lynx 172.17.0.10
+lynx 172.17.0.10
+nano /etc/bind/db.wt13.ephec-ti.be 
+service bind restart
+service bind9 restart

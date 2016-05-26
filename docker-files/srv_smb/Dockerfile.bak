@@ -1,0 +1,14 @@
+FROM debian:wheezy
+
+MAINTAINER Rémy Lambinet <rem.lambi171@gmail.com>
+
+RUN apt-get update
+
+EXPOSE 110
+EXPOSE 995
+EXPOSE 143
+EXPOSE 993
+EXPOSE 25
+EXPOSE 2525
+EXPOSE 465
+EXPOSE 80
