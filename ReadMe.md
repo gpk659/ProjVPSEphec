@@ -153,4 +153,4 @@ $
 ~~~
 
 ##### OpenVPN
-Install openVPN by following the tutoriel on [this URL](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04).
+Install openVPN directly on the server by following the tutoriel on [this URL](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04).
