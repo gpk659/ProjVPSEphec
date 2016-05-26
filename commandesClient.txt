@@ -1,1 +1,0 @@
-sudo docker run --name client -v /home/krumka/ProjVPSEphec/config/cache/:/root/ --dns=172.17.0.2 -itd ubuntu

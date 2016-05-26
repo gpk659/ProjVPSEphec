@@ -1,0 +1,10 @@
+FROM ubuntu
+
+MAINTAINER Remy Lambinet
+
+RUN apt-get update
+
+RUN apt-get install -y openvpn easy-rsa
+RUN echo 1 > /proc/sys/net/ipv4/ip_forward
+
+EXPOSE 53

@@ -21,3 +21,4 @@ service smbd restart
 service samba restart
 testparm
 ifconfig
+service samba start

@@ -55,3 +55,4 @@ nano /var/cache/bind/cache/named_dump.db
 nano named.conf.options
 service bind9 restart
 exit
+service bind9 start

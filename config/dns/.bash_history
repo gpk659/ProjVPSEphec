@@ -326,3 +326,6 @@ lynx 172.17.0.10
 nano /etc/bind/db.wt13.ephec-ti.be 
 service bind restart
 service bind9 restart
+service bind9 start
+nano /etc/bind/db.wt13.ephec-ti.be 
+ervice bind9 restart
