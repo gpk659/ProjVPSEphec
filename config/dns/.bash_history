@@ -329,3 +329,11 @@ service bind9 restart
 service bind9 start
 nano /etc/bind/db.wt13.ephec-ti.be 
 ervice bind9 restart
+cat /etc/bind/db.wt13.ephec-ti.be 
+cd /etc/bind
+ls
+nano named.conf
+nano named.conf.local
+nano named.conf.options 
+nano named.conf
+exit

@@ -57,3 +57,35 @@ ls /home
 ls -larTh /home
 ls -larTH /home
 ls -l /home
+service samba status
+touch /home/remy/test2.txt
+nano /etc/smb.conf
+nano /etc/samba/smb.conf
+chmod -R 777 /home
+cat /home/test2.txt
+cat /home/remy/test2.txt
+man ln
+ln /etc/samba/smb.conf /root/
+ln /etc/samba/smb.conf /root/smb.conf
+ln /etc/samba/smb.conf /root/
+ls /root/
+ls /root/ -l
+rm /root/smb.conf 
+ln /etc/samba/smb.conf /root/
+mv /etc/samba/smb.conf /root/
+ln -s /root/smb.conf /etc/samba/smb.conf
+service samba restart
+service samba restart
+service samba restart
+service samba restart
+testparm -s
+service samba restart
+service samba restart
+testparm -s
+testparm -s
+service samba restart
+testparm -s
+testparm -s
+service samba restart
+service samba restart
+service samba restart
